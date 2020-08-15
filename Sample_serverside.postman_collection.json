@@ -1,0 +1,383 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Sample_serverside",
+		"_postman_id": "34aa35a9-f4ba-0e98-464f-7cf7d3b50312",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Activity",
+			"description": "",
+			"item": [
+				{
+					"name": "Delete",
+					"request": {
+						"url": {
+							"raw": "http://127.0.0.1:8000/v1/activity/4?token=2ZtCP8LpQs5tYXlEtBtySpLLghejJmUXNKPtMxt0jeukPHvJohp1R1BN1Ry1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"v1",
+								"activity",
+								"4"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "2ZtCP8LpQs5tYXlEtBtySpLLghejJmUXNKPtMxt0jeukPHvJohp1R1BN1Ry1",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"url": {
+							"raw": "http://127.0.0.1:8000/v1/activity?token=2ZtCP8LpQs5tYXlEtBtySpLLghejJmUXNKPtMxt0jeukPHvJohp1R1BN1Ry1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"v1",
+								"activity"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "2ZtCP8LpQs5tYXlEtBtySpLLghejJmUXNKPtMxt0jeukPHvJohp1R1BN1Ry1",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "skill",
+									"value": "2",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "title",
+									"value": "Hacking",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Ethical hacking",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "startdate",
+									"value": "2010-10-29",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "enddate",
+									"value": "2016-10-30",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "participants",
+									"value": "1",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "List view",
+					"request": {
+						"url": {
+							"raw": "http://127.0.0.1:8000/v1/activity/1?token=2ZtCP8LpQs5tYXlEtBtySpLLghejJmUXNKPtMxt0jeukPHvJohp1R1BN1Ry1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"v1",
+								"activity",
+								"1"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "2ZtCP8LpQs5tYXlEtBtySpLLghejJmUXNKPtMxt0jeukPHvJohp1R1BN1Ry1",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"url": {
+							"raw": "http://127.0.0.1:8000/v1/activity/4?token=2ZtCP8LpQs5tYXlEtBtySpLLghejJmUXNKPtMxt0jeukPHvJohp1R1BN1Ry1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"v1",
+								"activity",
+								"4"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "2ZtCP8LpQs5tYXlEtBtySpLLghejJmUXNKPtMxt0jeukPHvJohp1R1BN1Ry1",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "skill",
+									"value": "3",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Skills",
+			"description": "",
+			"item": [
+				{
+					"name": "Get skills",
+					"request": {
+						"url": {
+							"raw": "http://127.0.0.1:8000/v1/skills?token=2ZtCP8LpQs5tYXlEtBtySpLLghejJmUXNKPtMxt0jeukPHvJohp1R1BN1Ry1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"v1",
+								"skills"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "2ZtCP8LpQs5tYXlEtBtySpLLghejJmUXNKPtMxt0jeukPHvJohp1R1BN1Ry1",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Register",
+			"request": {
+				"url": {
+					"raw": "http://127.0.0.1:8000/v1/auth/register?token=uFcXl5wql0hUzlEpojwsnvuOIIy1SFstqlZIo9C0s3izYQK6FqcEe1WxPR4r",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"v1",
+						"auth",
+						"register"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "uFcXl5wql0hUzlEpojwsnvuOIIy1SFstqlZIo9C0s3izYQK6FqcEe1WxPR4r",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "samodha",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "sam123@gmail.com",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "b456",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "profile",
+							"value": "expert",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "sam123",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"url": "http://127.0.0.1:8000/v1/auth/login",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "sjayaweera",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "b456",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "logout",
+			"request": {
+				"url": {
+					"raw": "http://127.0.0.1:8000/v1/auth/logout?token=y5a4gBZ37f2FRJztStStiwiA5SLu5yLgG2W1cFsVE0T09yKFRiJvpdk1YFvV",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"v1",
+						"auth",
+						"logout"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "y5a4gBZ37f2FRJztStStiwiA5SLu5yLgG2W1cFsVE0T09yKFRiJvpdk1YFvV",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
